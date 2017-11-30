@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    font:14px 'Myriad Pro', Calibri, sans-serif;
+}
+footer{
+    background:#ff8080;
+}
+main{
+    background:#ff80ff;
+}
+.clearfix::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.container{
+    width:940px;
+    padding:0 10px;
+    margin:0 auto;
+}
+.main-navigation{
+    float:left;
+    width:720px;
+    min-height:70px;
+}
+.user-block{
+    float:right;
+    width:140px;
+    min-height:70px;
+}
+.site-header{
+    margin-bottom:50px;
+    background:#000;
+}
+.logo{
+    width:368px;
+    height:204px;
+    margin:0 auto;
+    margin-bottom:80px;
+}
+.features-item{
+    float:left;
+    width:300px;
+    min-height:165px;
+    margin-right:20px;
+}
+.features-item:last-child{
+    margin-right:0;
+}
+.features{
+    margin-bottom:85px;
+}
+.index-content{
+    padding:50px 80px;
+    margin-bottom:35px;
+    background:#f2f2f2;
+}
+.index-content-left{
+    float:left;
+    width:380px;
+}
+.index-content-right{
+    float:right;
+    width:300px;
+}
