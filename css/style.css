@@ -1,12 +1,9 @@
 body{
     margin:0;
+    padding:0;
+    background:#242424;
     font:14px 'Myriad Pro', Calibri, sans-serif;
-}
-footer{
-    background:#ff8080;
-}
-main{
-    background:#ff80ff;
+    color:#f7f4f1;
 }
 .clearfix::after{
     content:"";
@@ -54,6 +51,7 @@ main{
     padding:50px 80px;
     margin-bottom:35px;
     background:#f2f2f2;
+    color:#000;
 }
 .index-content-left{
     float:left;
@@ -62,4 +60,25 @@ main{
 .index-content-right{
     float:right;
     width:300px;
+}
+.index-content:last-child{
+    margin-bottom:0;
+}
+.site-footer{
+    margin-top:65px;
+    padding:60px 0 40px;
+    background:#202020;
+}
+.footer-contacts{
+    float:left;
+    width:320px;
+    margin-right:60px;
+}
+.footer-social{
+    float:left;
+    width:180px;
+}
+.footer-copyright{
+    float:right;
+    width:160px;
 }
