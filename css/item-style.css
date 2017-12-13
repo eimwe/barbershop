@@ -1,0 +1,27 @@
+@import url(style.css);
+body{
+    background:#f9f6f3;
+    color:#000;
+}
+.item-img{
+    width:460px;
+}
+.img-full{
+    margin:0;
+}
+.item-img a{
+    float:left;
+    display:block;
+    width:140px;
+    height:140px;
+    margin-top:20px;
+    margin-right:20px;
+}
+.item-img a:last-child{
+    margin-right:0;
+}
+.item-desc{
+    float:right;
+    width:440px;
+    margin-top:-500px;
+}

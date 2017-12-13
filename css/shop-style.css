@@ -1,0 +1,36 @@
+@import url(style.css);
+body{
+    background:#f9f6f3;
+    color:#000;
+}
+fieldset{
+    display:table;
+    width:180px;
+    border-spacing:15px;
+    border:none;
+}
+.t-row{
+    display:table-row;
+}
+.t-cell{
+    display:table-cell;
+}
+.shop-window{
+    float:right;
+    width:700px;
+    margin-top:-500px;
+    font-size:0;
+}
+.shop-item{
+    width:220px;
+    display:inline-block;
+    vertical-align:top;
+    margin-right:20px;
+    font-size:14px;
+}
+.shop-item:nth-child(3n+3){
+    margin-right:0;
+}
+.paginator{
+    font-size:14px;
+}
