@@ -1,8 +1,8 @@
 body{
-    margin:0;
-    padding:0;
-    background:#242424;
-    font:14px 'Myriad Pro', Calibri, sans-serif;
+    min-width:960px;
+    font:bold 14px/24px 'PT Sans Narrow', Arial, sans-serif;
+    text-transform:uppercase;
+    background:#070707 url(../img/front-bg.png) no-repeat center top;
     color:#f7f4f1;
 }
 .clearfix::after{
@@ -15,19 +15,37 @@ body{
     padding:0 10px;
     margin:0 auto;
 }
+.site-header{
+    margin-bottom:60px;
+    background:#000;
+    color:#f7f4f1;
+}
 .main-navigation{
     float:left;
     width:720px;
-    min-height:70px;
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size:0;
+}
+.main-navigation li{
+    display:inline-block;
+    vertical-align:top;
+    font-size:16px;
+    line-height:20px;
+}
+.main-navigation li a{
+    display:block;
+    padding:25px 20px;
+    color:#f7f4f1;
+    text-decoration:none;
+}
+.main-navigation li a:hover{
+    background:#242424;
 }
 .user-block{
     float:right;
     width:140px;
-    min-height:70px;
-}
-.site-header{
-    margin-bottom:50px;
-    background:#000;
 }
 .logo{
     width:368px;
