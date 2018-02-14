@@ -6,6 +6,11 @@ body {
   color: #f7f4f1;
 }
 
+.inner-page {
+  color: #070707;
+  background: #f8f3f0 url(../img/index-content-bg.png) repeat;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -25,13 +30,17 @@ body {
   color: #f7f4f1;
 }
 
+.inner-page .site-header {
+  margin-bottom: 55px;
+}
+
 .main-navigation {
-  float:left;
-  width:720px;
-  margin:0;
-  padding:0;
-  list-style:none;
-  font-size:0;
+  float: left;
+  width: 720px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
 }
 
 .main-navigation li {
@@ -41,20 +50,60 @@ body {
   line-height: 20px;
 }
 
-.main-navigation li a {
+.main-navigation a {
   display: block;
   padding: 25px 20px;
   color: #f7f4f1;
   text-decoration: none;
 }
 
-.main-navigation li a:hover {
-  background:#242424;
+.main-navigation a:hover {
+  background: #242424;
+}
+
+.main-navigation .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.main-navigation .active span {
+  display: block;
+  padding: 25px 20px;
+}
+
+.main-navigation .logo-inner {
+  float: left;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+
+.main-navigation .logo-inner img {
+  width: 111px;
+  height: 24px;
+}
+
+.main-navigation .logo-inner:hover {
+  background: none;
 }
 
 .user-block {
-  float:right;
-  max-width:140px;
+  float: right;
+  max-width: 140px;
 }
 
 .login {
@@ -87,7 +136,6 @@ body {
   opacity: 1;
 }
 /*<--Here is the ending of the Header styles*/
-
 /*Main styles starts here-->*/
 .logo {
   width: 368px;
@@ -176,7 +224,7 @@ body {
   margin: 0;
   margin-bottom: 25px;
 }
-/**News section styling starts here-->**/
+/*News section styling starts here-->*/
 .news-preview {
   margin: 0;
   padding: 0;
@@ -216,8 +264,8 @@ body {
 .btn:hover, .btn:active {
     background: #663d15;
 }
-/**<--Here is the ending of the News section styling**/
-/**Photogallery section styling starts here-->**/
+/*<--Here is the ending of the News section styling*/
+/*Photogallery section styling starts here-->*/
 .gallery {
   position: relative;
   height: 260px;
@@ -249,8 +297,8 @@ body {
 .gallery-next {
   right:0;
 }
-/**<--Here is the ending of the Photogallery section styling**/
-/**Form section styling starts here-->**/
+/*<--Here is the ending of the Photogallery section styling*/
+/*Form section styling starts here-->*/
 .appointment-form input {
   float: left;
   width: 106px;
@@ -278,9 +326,60 @@ body {
   width: 100%;
   clear: both;
 }
-/**<--Here is the ending of the Form section styling**/
-/*<--Here is the ending of the Main styles*/
+/*<--Here is the ending of the Form section styling*/
+/*Inner page styles starts here-->*/
+.inner-page-title {
+  margin-bottom: 55px;
+}
 
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px ;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  background-color: #070707;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+  color: #070707;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+/*<--Here is the ending of the Main styles*/
 /*Footer styles starts here-->*/
 .site-footer {
   margin-top: 65px;
