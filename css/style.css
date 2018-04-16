@@ -2,13 +2,13 @@ body {
   min-width: 960px;
   font: 700 14px/24px "PT Sans Narrow", Arial, sans-serif;
   text-transform: uppercase;
-  background: #070707 url(../img/front-bg.png) no-repeat center top;
+  background: #070707 url("../img/front-bg.png") no-repeat center top;
   color: #f7f4f1;
 }
 
 .inner-page {
   color: #070707;
-  background: #f8f3f0 url(../img/index-content-bg.png) repeat;
+  background: #f8f3f0 url("../img/index-content-bg.png") repeat;
 }
 
 .clearfix::after {
@@ -128,7 +128,7 @@ body {
   left: 20px;
   width: 18px;
   height: 18px;
-  background: url(../img/sprite.png) no-repeat -20px -154px;
+  background: url("../img/sprite.png") no-repeat -20px -154px;
   opacity: .3;
 }
 
@@ -195,7 +195,7 @@ body {
 .index-content {
   padding: 50px 80px;
   margin-bottom: 35px;
-  background: url(../img/index-content-shadow.png) no-repeat center, #f7f4f1 url(../img/index-content-bg.png);
+  background: url("../img/index-content-shadow.png") no-repeat center, #f7f4f1 url("../img/index-content-bg.png");
   color: #000;
 }
 
@@ -379,12 +379,131 @@ body {
 .breadcrumbs .current::after {
   display: none;
 }
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid #000;
+}
+
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #f8f3f0 url("../img/index-content-bg.png") repeat;
+}
+
+.big-heading::after {
+  content: "";
+  z-index: 1;
+  position: relative;
+  top: -25px;
+  display: block;
+  border-bottom: 2px solid #000;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+.short-text {
+  padding-right: 80px;
+}
+
+/*Column styles starts here-->*/
+.inner-columns {
+  margin: 60px 0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left {
+  float: left;
+}
+
+.inner-column-right {
+  float: right;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+/*<--Here is the ending of the Column styles*/
 /*<--Here is the ending of the Main styles*/
 /*Footer styles starts here-->*/
 .site-footer {
   margin-top: 65px;
   padding: 60px 0 40px;
-  background: #232323 url(../img/site-footer-bg.png);
+  background: #232323 url("../img/site-footer-bg.png");
   color: #f7f4f1;
 }
 
@@ -421,7 +540,7 @@ body {
   margin-right: 0 2px;
   font-size: 0;
   text-decoration: none;
-  background: #000 url(../img/sprite.png) no-repeat center;
+  background: #000 url("../img/sprite.png") no-repeat center;
   transition: background-position 0.5s, background-color 0.5s;
 }
 
@@ -469,3 +588,81 @@ body {
   color: #000;
 }
 /*<--Here is the ending of the Footer styles*/
+/*Pop-up styles starts here-->*/
+.modal-content {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+  color: #000;
+  background: #f8f3f0 url("../img/index-content-bg.png");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, .7);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 1px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+  font: 700 14px/24px "PT Sans Narrow", Arial, sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 2px solid #000;
+  outline: none;
+}
+/*<--Here is the ending of the Pop-up styles*/
